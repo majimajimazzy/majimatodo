@@ -2,7 +2,6 @@
 
 import React,{ ChangeEvent, FormEvent, useState } from "react";
 import { addTodo } from "../api/api";
-import { todo } from "node:test";
 import {v4 as uuidv4 } from "uuid";
 
 const AddTask = () => {
