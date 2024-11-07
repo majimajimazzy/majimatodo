@@ -27,9 +27,11 @@ const Todo = ({todo}:TodoProps) => {
   const handleSave = async () => {
     await editTodo(todo.id, editedTaskTitle);
     setIsEditing(false);
+    window.location.reload();
   };
   const handleDelete = async () => {
     await deleteTodo(todo.id);
+    window.location.reload();
   };
   return (
     <li key={todo.id} className="flex justify-between p-4 bg-white border-l-4 border-blue-500 rounded shadow">

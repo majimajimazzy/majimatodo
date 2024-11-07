@@ -10,6 +10,7 @@ const AddTask = () => {
     e.preventDefault();
     await addTodo({id: uuidv4(), text: taskTitle});
     setTaskTitle("");
+    window.location.reload();
   };
   return (
     <form className="mb-4 space-y-3" onSubmit={handleSubmit} >
